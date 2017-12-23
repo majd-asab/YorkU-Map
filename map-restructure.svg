@@ -81,11 +81,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="858.00038"
-     inkscape:cy="874.34688"
+     inkscape:zoom="4"
+     inkscape:cx="771.81323"
+     inkscape:cy="628.48139"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer45"
+     inkscape:current-layer="layer60"
      showgrid="false"
      units="px"
      inkscape:window-width="1301"
@@ -109,7 +109,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="background" />
+     inkscape:label="background"
+     style="display:inline" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -221,11 +222,28 @@
        style="fill:none;stroke:#ffffff;stroke-width:0.81138891;stroke-linecap:round;stroke-linejoin:round"
        d="m 223.7293,244.51888 -13.7048,0.1747"
        id="path378" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path400-6"
+       style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.81138885;stroke-linecap:round;stroke-linejoin:round"
+       d="m 21.802379,59.641015 c 8.717577,1.507089 25.337531,-2.014609 26.085349,4.564144 L 46.28073,61.239966 43.30884,60.464819 28.245415,60.031212 25.748876,59.931467 Z"
+       sodipodi:nodetypes="ccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer60"
+     inkscape:label="steadman-lecture-building">
+    <path
+       inkscape:connector-curvature="0"
+       id="path112-12"
+       style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
+       d="m 218.95012,119.28613 -6.84671,0.0314 0.0106,2.2682 -2.2255,0.01 0.0191,3.97652 -0.82999,0.004 0.0277,5.00683 0.22422,-0.003 0.0109,1.80424 1.04013,-0.005 0.0135,2.59074 2.82116,-0.0136 0.007,1.121 1.52598,-0.006 0.006,0.82083 1.43723,-0.007 -0.004,-0.66036 1.2833,-0.006 -0.0108,-1.82317 0.77101,-0.005 0.004,0.70987 2.74453,-0.0135 -0.0127,-2.77035 1.16072,-0.006 -0.0528,-10.66539 -3.10978,0.0154 z" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer35"
-     inkscape:label="health-and -nursing">
+     inkscape:label="health-and -nursing"
+     style="display:inline">
     <path
        id="health-and-science"
        style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
@@ -239,21 +257,32 @@
      inkscape:label="berge"
      style="display:inline">
     <path
-       id="path112-0"
+       id="berge"
        style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
        d="m 126.95847,165.0663 -22.37985,0.33614 7.31424,16.68327 14.65317,0.35048 z"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:label="#path112-0" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer27"
      inkscape:label="petrie-science-building"
      style="display:inline">
-    <path
+    <g
        id="petrie-science-building"
-       style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
-       d="m 134.35905,122.0303 -13.97083,0.27156 0.2874,14.65272 13.96984,-0.27184 z"
-       inkscape:connector-curvature="0" />
+       inkscape:label="#g3748">
+      <path
+         inkscape:label="#petrie-science-building"
+         inkscape:connector-curvature="0"
+         d="m 134.35905,122.0303 -13.97083,0.27156 0.2874,14.65272 13.96984,-0.27184 z"
+         style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
+         id="dssss" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 120.53798,132.96608 -4.13864,0.1093 0.13731,3.98823 4.13897,-0.10903 z"
+         style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.15388767"
+         id="path112-1-2" />
+    </g>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -306,7 +335,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer39"
-     inkscape:label="student-services-parking">
+     inkscape:label="student-services-parking"
+     style="display:inline">
     <path
        inkscape:connector-curvature="0"
        id="student-services-parking"
@@ -317,7 +347,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer40"
-     inkscape:label="bennette">
+     inkscape:label="bennette"
+     style="display:inline">
     <path
        inkscape:connector-curvature="0"
        id="bennette-center"
@@ -353,7 +384,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer46"
-     inkscape:label="founders-res">
+     inkscape:label="founders-res"
+     style="display:inline">
     <path
        id="founders-res"
        style="display:inline;fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
@@ -364,7 +396,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer47"
-     inkscape:label="winters-res">
+     inkscape:label="winters-res"
+     style="display:inline">
     <path
        inkscape:connector-curvature="0"
        id="winters-res"
@@ -413,7 +446,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer43"
-     inkscape:label="winters-college">
+     inkscape:label="winters-college"
+     style="display:inline">
     <g
        id="winters-college"
        inkscape:label="#g2671"
@@ -446,6 +480,41 @@
        d="m 323.50181,175.09725 -9.66587,2.73624 -10.82116,4.14837 -5.73652,2.08837 -8.80738,1.87621 -0.0364,24.90169 6.69581,-0.0416 -0.1808,-9.98261 4.81096,0.15288 5.72217,-0.15481 11.12482,0.22032 1.54301,-3.65635 -0.20808,-2.54876 2.6368,-7.75964 -4.38388,-0.39325 -3.37417,9.04248 -11.63238,-0.35735 -0.39515,-2.32556 -0.77836,-4.60811 21.07473,-8.0805 2.63554,-0.47868 z"
        inkscape:connector-curvature="0"
        inkscape:label="#path110" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer49"
+     inkscape:label="west-office"
+     style="display:inline">
+    <path
+       inkscape:connector-curvature="0"
+       id="west-office"
+       style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
+       d="m 127.64254,67.897725 -18.894,0.310319 0.21405,12.884788 18.89106,-0.311224 z"
+       inkscape:label="#path112-2" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer50"
+     inkscape:label="west-office-parking"
+     style="display:inline">
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#eeeeee;fill-rule:evenodd;stroke:#a07070;stroke-width:0.10583334"
+       d="m 102.24432,68.282011 0.0188,1.461046 0.13956,11.006288 5.77634,-0.07295 -0.15808,-12.468351 z m 0,0"
+       id="path70" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer51"
+     inkscape:label="executive-learning-building"
+     style="display:inline">
+    <path
+       id="executive-learning-center"
+       style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
+       d="m 306.82911,200.93637 -5.72188,0.16488 -0.22305,10.65829 10.37304,0.42377 0.0395,-5.29904 -4.5437,-0.10001 z"
+       inkscape:label="#path112-0"
+       inkscape:connector-curvature="0" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -497,7 +566,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer36"
-     inkscape:label="atkinson">
+     inkscape:label="atkinson"
+     style="display:inline">
     <path
        id="atkinson"
        style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
@@ -508,7 +578,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer37"
-     inkscape:label="pond-res">
+     inkscape:label="pond-res"
+     style="display:inline">
     <g
        id="pond-residance"
        inkscape:label="#g1491">
@@ -528,7 +599,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer38"
-     inkscape:label="atkinson-res">
+     inkscape:label="atkinson-res"
+     style="display:inline">
     <path
        inkscape:connector-curvature="0"
        id="atkinson-res"
@@ -597,10 +669,11 @@
      inkscape:label="center-film-media"
      style="display:inline">
     <path
-       id="path112-3"
+       id="center-film-media"
        style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
        d="m 250.53125,184.87147 -17.1893,-0.0286 -0.53292,16.43945 c 0.1258,0.15599 0.24646,0.31146 0.36588,0.46683 l 13.86867,0.0644 2.67281,2.65914 3.44258,-2.57717 -2.7934,-3.45478 z"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:label="#path112-3" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -621,9 +694,10 @@
      style="display:inline">
     <path
        inkscape:connector-curvature="0"
-       id="path112-6"
+       id="acw"
        style="display:inline;fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
-       d="m 221.63289,184.71124 -16.33248,0.19642 0.0854,7.68365 1.28775,2.66899 2.59091,-0.0204 4.51668,-2.26527 1.46708,0.0467 0.0487,0.73309 6.03175,0.14395 z" />
+       d="m 221.63289,184.71124 -16.33248,0.19642 0.0854,7.68365 1.28775,2.66899 2.59091,-0.0204 4.51668,-2.26527 1.46708,0.0467 0.0487,0.73309 6.03175,0.14395 z"
+       inkscape:label="#path112-6" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -676,7 +750,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer24"
-     inkscape:label="bethune-res">
+     inkscape:label="bethune-res"
+     style="display:inline">
     <path
        id="path112-1"
        style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
@@ -685,14 +760,36 @@
   </g>
   <g
      inkscape:groupmode="layer"
+     id="layer57"
+     inkscape:label="observatory"
+     style="display:inline">
+    <g
+       id="g4590">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 123.8032,119.14327 -2.31669,0.0813 0.0769,2.96424 2.31687,-0.081 z"
+         style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.09926026"
+         id="path112-1-28" />
+      <ellipse
+         ry="1.2160764"
+         rx="1.4733232"
+         cy="118.70449"
+         cx="122.61324"
+         id="path3781"
+         style="fill:#d9d0c9;fill-opacity:1;fill-rule:evenodd;stroke-width:0.26458332" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
      id="layer25"
      inkscape:label="chemistry- building"
      style="display:inline">
     <path
-       id="path112-1-2"
+       id="chemistry-building"
        style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
        d="m 107.21305,120.63586 -5.69864,0.17824 0.44001,14.97833 -0.52623,0.60279 -0.19501,0.67792 0.12677,0.50498 0.66987,0.45198 0.71272,0.0589 0.64699,-0.30954 0.45754,-0.56544 12.52551,0.0212 -0.0287,-4.5779 -1.09092,-0.0131 -0.01,-1.09183 -7.83161,0.32292 z"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:label="#path112-1-2" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -709,7 +806,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer29"
-     inkscape:label="stacie-library">
+     inkscape:label="stacie-library"
+     style="display:inline">
     <path
        id="stacie"
        style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
@@ -740,7 +838,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="lumbers">
+     inkscape:label="lumbers"
+     style="display:inline">
     <path
        id="lumbers"
        style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
@@ -751,7 +850,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer15"
-     inkscape:label="behavioral-science-building">
+     inkscape:label="behavioral-science-building"
+     style="display:inline">
     <path
        id="behavioral-science-building"
        style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
@@ -762,7 +862,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer17"
-     inkscape:label="student-center-old">
+     inkscape:label="student-center-old"
+     style="display:inline">
     <g
        id="student-center-old-group"
        inkscape:label="#g861">
@@ -823,10 +924,103 @@
      style="display:inline">
     <path
        inkscape:connector-curvature="0"
-       style="fill:#dddde8;fill-rule:evenodd;stroke-width:0.37815034"
+       style="fill:#d9d0c9;fill-opacity:1;fill-rule:evenodd;stroke-width:0.37815034"
        d="m 150.82304,160.943 0.56844,30.27291 19.65516,0.002 -0.54278,-30.50438 z"
        id="central-square"
        sodipodi:nodetypes="ccccc"
        inkscape:label="#path216" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer58"
+     inkscape:label="scott-religious-center">
+    <path
+       id="scott-library-7"
+       style="display:inline;fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.131;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 165.85263,178.72105 -10.20203,0.0219 0.0248,9.03597 10.27895,-0.0446 z"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path112-2"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer59"
+     inkscape:label="sherman-health-building">
+    <path
+       inkscape:connector-curvature="0"
+       id="sherman-health-building"
+       style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
+       d="m 40.886355,44.288835 -20.875694,-0.180858 -0.336325,12.727327 11.754505,0.23311 -0.141984,-2.305005 9.545305,-0.141193 z"
+       inkscape:label="#path112-3" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer52"
+     inkscape:label="fine-arts"
+     style="display:inline">
+    <g
+       id="fine-arts"
+       inkscape:label="#g3345">
+      <path
+         inkscape:label="#path112-7"
+         d="m 225.46734,201.00628 -0.0765,-2.35751 -2.55044,10e-4 0.11288,2.36495 z"
+         style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.06710728"
+         id="atkinson-res-3"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 222.8404,198.65077 -20.23487,0.22251 -0.27656,9.17275 20.74255,0.59268 -0.18724,-8.08821 z"
+         style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.24412133"
+         id="path112-2"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer53"
+     inkscape:label="kanef-tower"
+     style="display:inline">
+    <path
+       id="kanef-tower"
+       style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.17960781"
+       d="m 276.99416,125.033 -9.10458,0.0412 0.089,14.87957 1.02548,-0.01 6e-4,0.80203 1.43763,-0.0159 0.002,1.08482 6.8377,0.0778 z"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path112-7"
+       sodipodi:nodetypes="ccccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer54"
+     inkscape:label="ontario-archives"
+     style="display:inline">
+    <path
+       id="ontario-archives"
+       style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.30306175"
+       d="m 282.26326,120.63412 c -0.77763,-0.18931 -1.58862,-0.45512 -2.4331,-0.80544 l -11.96441,0.34638 c 0.0592,2.56123 0.0168,2.08036 0.0706,4.64193 l 9.28996,-0.0237 0.30362,17.03078 5.11884,-0.0876 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:label="#path112-7" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer55"
+     inkscape:label="life-science-building"
+     style="display:inline">
+    <path
+       inkscape:connector-curvature="0"
+       id="life-science-building"
+       style="display:inline;fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
+       d="m 123.69098,102.48844 -22.0324,0.18498 0.0918,10.73187 22.03246,-0.18337 z"
+       inkscape:label="#path112-5" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer56"
+     inkscape:label="welcome-center"
+     style="display:inline">
+    <path
+       inkscape:connector-curvature="0"
+       id="path116-9"
+       style="fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332"
+       d="m 319.80441,165.77715 -4.53094,-0.30686 -9.28818,-1.52529 1.54697,1.29621 -2.1156,3.65271 7.4025,-1.71308 0.10413,-0.44217 1.50033,-0.51702 5.23587,-0.10605 z" />
   </g>
 </svg>
