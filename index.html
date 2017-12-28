@@ -1,4 +1,92 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>York University - Interactive Map</title>
+   <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <!-- Material Design icon font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <script type="text/javascript">
+    function lightup(svgId){
+      let structure = document.getElementById(svgId);
+      structure.setAttribute("style"," -webkit-transition: fill 1s; fill:#cc0000;"); 
+    }
+  </script>
+
+  <!-- Uses a transparent header that draws on top of the layout's background -->
+  <style>
+  .demo-layout-transparent {
+    background: url('./assets/images/Vari_Hall.jpg') center / cover;
+  }
+  .demo-layout-transparent .mdl-layout__header {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+       your background is light. */
+    color: white;
+    background-color: #cc0000;
+    opacity: 0.5;
+  }
+  .demo-layout-transparent .mdl-layout__header {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+       your background is light. */
+    color: white;
+    background-color: #cc0000;
+    opacity: 0.5;
+  }
+  .demo-layout-transparent .mdl-layout__header a:hover{
+    opacity: 1.0;
+    font-weight: bold;
+  }
+  .container-map-list{
+    display:inline;
+  }
+  .map-list{
+    display:inline;
+    float:left;
+  }
+  .list ul{
+    background-color: white;
+  }
+  .list ul li:hover{
+    box-shadow:0 2px 2px 0 rgba(0,0,0,.14),
+    0 3px 1px -2px rgba(0,0,0,.2),
+    0 1px 5px 0 rgba(0,0,0,.12)
+  }
+  .map{
+    /*background-color: white;*/
+    height:68%;
+    width: 50%;
+  }
+  svg{
+    height:100%;
+    width: 100%;
+  }
+  .mdl-layout__content{
+    margin:10px;
+  }
+  </style>
+</head>
+<body>  
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">York University Interactive Map</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="container-map-list">
+        <div class="map map-list mdl-shadow--2dp">
+          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
@@ -1785,3 +1873,29 @@
        d="m 355.72543,138.30454 -4.53094,-0.30686 -9.28818,-1.52529 1.54697,1.29621 -2.1156,3.65271 7.4025,-1.71308 0.10413,-0.44217 1.50033,-0.51702 5.23587,-0.10605 z" />
   </g>
 </svg>
+
+        </div>
+        <div class="list map-list">
+          <ul class="mdl-list mdl-shadow--2dp">
+            <li class="mdl-list__item" onclick="lightup('vari-hall')">
+              <span class="mdl-list__item-primary-content vari-hall">
+                Vari Hall
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Aaron Paul
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Bob Odenkirk
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
