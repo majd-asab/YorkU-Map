@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>York University - Interactive Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
   <!-- Material Design icon font -->
@@ -9,11 +10,11 @@
 
   <script type="text/javascript">
     function lightup(svgId){
-        let structure  = document.getElementById(svgId);
-        let oldStyle   = structure.style.cssText;
-        let flashStyle = "fill:#cc0000;";
-        structure.setAttribute("style",flashStyle);
-        setTimeout(function(){structure.setAttribute("style",oldStyle)},2000);
+      let structure  = document.getElementById(svgId);
+      let oldStyle   = structure.style.cssText;
+      let flashStyle = "fill:#cc0000;";
+      structure.setAttribute("style",flashStyle);
+      setTimeout(function(){structure.setAttribute("style",oldStyle)},2000);
     }
   </script>
 
@@ -47,10 +48,10 @@
     display:inline;
     float:left;
   }
-
   .list{
     height: 100%;
     overflow: auto;
+    display: inline;
   }
 
   .list ul{
@@ -1892,227 +1893,217 @@
         </div>
         <div class="list map-list">
           <ul class="mdl-list mdl-shadow--2dp">
-            <li class="mdl-list__item" onclick="lightup('vari-hall')">
+            <li class="mdl-list__item" onclick="lightup('ace')">
               <span class="mdl-list__item-primary-content vari-hall">
                 Accolade East
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('acw')">
               <span class="mdl-list__item-primary-content">
                 Accolade West
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('atkinson')">
               <span class="mdl-list__item-primary-content">
                 Atkinson
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('behavioral-science-building')">
               <span class="mdl-list__item-primary-content">
                 Behavioural Science
               </span>
             </li>
-              <li class="mdl-list__item">
+              <li class="mdl-list__item" onclick="lightup('bennette-center')">
               <span class="mdl-list__item-primary-content">
-                Bennet Centre
+                Bennette Centre
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('berge')">
               <span class="mdl-list__item-primary-content">
                 Bergeron Centre
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('york-lanes')">
               <span class="mdl-list__item-primary-content">
                 York Lanes, Bookstore
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('calumet-college')">
               <span class="mdl-list__item-primary-content">
                 Calumet College
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('central-square')">
               <span class="mdl-list__item-primary-content">
                 Central Square
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('center-film-media')">
               <span class="mdl-list__item-primary-content">
                 Centre for Film & Theatre
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('chemistry-building')">
               <span class="mdl-list__item-primary-content">
                 Chemistry Building
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('curtis-lecture-hall')">
               <span class="mdl-list__item-primary-content">
                 Curtis Lecture Halls
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('executive-learning-center')">
               <span class="mdl-list__item-primary-content">
                 Executive Learning Centre
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('farquharson-life-science')">
               <span class="mdl-list__item-primary-content">
                 Farquharson Life Sciences
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('founders-college')">
               <span class="mdl-list__item-primary-content">
                 Founders College
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('health-and-science')">
               <span class="mdl-list__item-primary-content">
                 Health, Nursing & Environmental Studies
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('osgoode')">
               <span class="mdl-list__item-primary-content">
                 Ignat Kaneff Building, Osgoode Hall Law School
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('fine-arts')">
               <span class="mdl-list__item-primary-content">
                 Joan & Martin Goldfarb Centre for Fine Arts
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('kanef-tower')">
               <span class="mdl-list__item-primary-content">
                 Kaneff Tower
               </span>
             </li>
-            <li class="mdl-list__item">
-              <span class="mdl-list__item-primary-content">
-               Kinsmen
-              </span>
-            </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('lassonde')">
               <span class="mdl-list__item-primary-content">
                 Lassonde Building
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('life-science-building')">
               <span class="mdl-list__item-primary-content">
                 Life Sciences Building
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('path116-9')">
               <span class="mdl-list__item-primary-content">
                 Lorna R. Marsden Honour Court & Welcome Centre
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('lumbers')">
               <span class="mdl-list__item-primary-content">
                 Lumbers
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('mclaughlin-college')">
               <span class="mdl-list__item-primary-content">
                 Mclaughlin College
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('bethune-college')">
               <span class="mdl-list__item-primary-content">
                 Norman Bethune College
               </span>
             </li>
-            <li class="mdl-list__item">
-              <span class="mdl-list__item-primary-content">
-                Executive Learning Centre
-              </span>
-            </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('path112-1-28')">
               <span class="mdl-list__item-primary-content">
                 Observatory, Petrie
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('dssss')">
               <span class="mdl-list__item-primary-content">
                 Petrie Sience Building
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('path112')">
               <span class="mdl-list__item-primary-content">
                 Ross Building
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('scott-library')">
               <span class="mdl-list__item-primary-content">
                 Scott Library
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('scott-library-7')">
               <span class="mdl-list__item-primary-content">
                 Scott Religious Centre
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('shulich')">
               <span class="mdl-list__item-primary-content">
                 Seymour Schulich Building
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('sherman-health-building')">
               <span class="mdl-list__item-primary-content">
                 Sherman Health Science Research Centre
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('stacie')">
               <span class="mdl-list__item-primary-content">
                 Steacie Science & Engineering Library
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('path112-12')">
               <span class="mdl-list__item-primary-content">
                 Stedman Lecture Halls
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('stong-college')">
               <span class="mdl-list__item-primary-content">
                 Stong College
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('student-center-old')">
               <span class="mdl-list__item-primary-content">
                 Student Centre
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('tait-mckenzie')">
               <span class="mdl-list__item-primary-content">
                 Tait Mckenzie Centre
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('vanier-college')">
               <span class="mdl-list__item-primary-content">
                 Vanier College
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('vari-hall')">
               <span class="mdl-list__item-primary-content">
                 Vari Hall
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('victor-db')">
               <span class="mdl-list__item-primary-content">
                 Victor Phillip Dahdaleh Building
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('west-office')">
               <span class="mdl-list__item-primary-content">
                 West Office Building
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('william-small-center')">
               <span class="mdl-list__item-primary-content">
                 William Small Centre
               </span>
             </li>
-            <li class="mdl-list__item">
+            <li class="mdl-list__item" onclick="lightup('ppp')">
               <span class="mdl-list__item-primary-content">
                 Winters College
               </span>
