@@ -9,8 +9,11 @@
 
   <script type="text/javascript">
     function lightup(svgId){
-      let structure = document.getElementById(svgId);
-      structure.setAttribute("style"," -webkit-transition: fill 1s; fill:#cc0000;"); 
+        let structure  = document.getElementById(svgId);
+        let oldStyle   = structure.style.cssText;
+        let flashStyle = "fill:#cc0000;";
+        structure.setAttribute("style",flashStyle);
+        setTimeout(function(){structure.setAttribute("style",oldStyle)},2000);
     }
   </script>
 
@@ -44,25 +47,40 @@
     display:inline;
     float:left;
   }
+
+  .list{
+    height: 100%;
+    overflow: auto;
+  }
+
   .list ul{
     background-color: white;
+    margin-top: 0;
+    margin-left: 20px;
+
   }
   .list ul li:hover{
     box-shadow:0 2px 2px 0 rgba(0,0,0,.14),
     0 3px 1px -2px rgba(0,0,0,.2),
     0 1px 5px 0 rgba(0,0,0,.12)
   }
+
   .map{
     /*background-color: white;*/
-    height:68%;
-    width: 50%;
+    height:100%;
+    width: 60%;
   }
   svg{
     height:100%;
     width: 100%;
+
+  }
+  svg path{
+    transition: fill 1s;
   }
   .mdl-layout__content{
     margin:10px;
+    height:100%;
   }
   </style>
 </head>
@@ -78,14 +96,12 @@
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="">Link</a>
           <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
         </nav>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="container-map-list">
-        <div class="map map-list mdl-shadow--2dp">
+        <div class="map map-list">
           <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
@@ -170,10 +186,10 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="1188.1138"
-     inkscape:cy="114.98204"
+     inkscape:cx="1018.7712"
+     inkscape:cy="99.123091"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer81"
+     inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:window-width="1301"
@@ -190,7 +206,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -262,23 +278,20 @@
          id="path418"
          d="m 191.60424,35.489809 10.25524,-2.748024 6.91665,-0.05328 8.49888,3.153537 5.01691,2.60988 m 11.3509,-10.122831 -5.19753,-0.16164 m -42.34077,263.645519 -0.10201,23.51527 0.12242,3.26899 0.48181,3.75304 m 2.95165,-29.06591 -0.25483,-24.92701 -0.48487,-3.02767 m 49.70847,-227.067819 1.58323,-2.439825 0.45728,-2.26235 -0.26754,-1.703177 -1.34584,-1.292796 -2.36458,-1.560412 m 21.30357,6.09612 1.41976,0.948544 10.92826,9.455538 7.0179,10.11309 4.68391,11.207487 2.13112,20.072051 0.38494,3.63804 m -307.000321,44.183399 -2.502632,0.15069 -9.235749,1.04461 -3.2966,0.37449 M 67.240788,55.091207 66.157,55.18526 l -1.389004,0.24592 -2.420616,0.69602 -1.390038,0.446979 -1.658176,0.714626 -1.770555,0.85408 -1.59265,0.905639 -1.015551,0.578935 -1.563976,1.065136 -1.298847,0.966024 -1.512812,1.244202 -1.264097,1.433585 -1.72408,2.001011 -2.728022,4.573433 -0.384214,1.140749 0.04266,1.269507 m 240.541098,107.198404 0.0539,-13.0021 -0.31774,-13.69051" />
       <path
-         sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
-         style="fill:none;stroke:#ffffff;stroke-width:1.69333339;stroke-linecap:round;stroke-linejoin:round"
-         inkscape:connector-curvature="0"
          id="path410"
-         d="m 254.8898,180.70206 7.34476,0.10201 22.8399,-0.28551 m -0.31018,-26.69166 -16.0624,0.61128 -10.79767,0.16924 m 0,0 -34.09723,-0.0666 -13.00055,0.17308 -5.33564,1.01086 -2.12015,1.88861 -0.85091,2.82897 -0.21462,8.05554 0.15109,9.0877 1.95625,2.97247 2.09335,0.75073 3.88576,-0.0473 13.56037,0.0299 25.68813,-0.42491 1.50365,-0.0694 3.76609,-0.095 m 10.50236,-62.69895 18.50491,-0.73881 M 67.465844,66.816684 l 0.08561,0.958053 0.172364,0.311183 0.154464,0.323169 0.138778,0.331418 0.11916,0.335523 0.10277,0.342434 0.08702,0.345898 0.06546,0.351621 0.04725,0.354694 0.01468,0.649708 0.07079,0.265267 0.0871,0.258701 0.108259,0.250618 0.121883,0.244358 0.138247,0.236317 0.156884,0.223089 0.167676,0.215224 0.183769,0.19939 0.195504,0.193314 0.210841,0.171358 0.222383,0.162195 0.231555,0.144893 0.242412,0.126881 0.246238,0.110238 0.257069,0.09352 0.261788,0.07635 0.266824,0.06064 0.270551,0.03689 0.272361,0.02209 0.272063,0.0031 0.272101,-0.01559 0.313086,-0.03346 7.755761,-0.272641 m -9.137617,201.355973 -0.811484,-3.28718 0.714487,-6.81797 0.729063,-3.78529 3.311799,-12.03998 2.353575,-7.4363 1.008535,-1.72046 1.581393,-1.32669 1.243683,0.22322 M 423.5816,86.737378 l -3.11249,0.134732 -29.40007,0.897931 -20.15601,-0.08656 -7.75209,-0.01548 -1.12207,-0.06381 -0.89798,-0.04897 -1.01006,-0.06045 -3.83644,0.09947 -28.68037,1.234374 -1.7328,-0.09493 -28.18396,1.621677 -13.34894,0.179184 m -97.44798,231.986434 2.96053,-0.0329 -76.11813,0.59945 90.66964,-0.60753 11.16901,-0.1023 12.13928,-0.13239 12.3582,-0.033 12.13907,-0.2819 11.75154,0.35064 11.7152,-0.29663 11.87313,0.20707 16.34841,-0.46514 11.32168,-0.34698 2.93289,0.0207" />
+         transform="matrix(0.26458333,0,0,0.26458333,-35.91689,-19.627318)"
+         style="fill:none;stroke:#ffffff;stroke-width:6.4000001;stroke-linecap:round;stroke-linejoin:round"
+         d="m 390.73828,326.7168 0.32227,3.62109 0.65234,1.17578 0.58399,1.22266 0.52343,1.25195 0.45117,1.26758 0.38868,1.29492 0.32812,1.30664 0.24805,1.33008 0.17773,1.33984 0.0566,2.45704 0.26758,1.00195 0.32813,0.97656 0.41015,0.94727 0.46094,0.92382 0.52148,0.89454 0.59375,0.84179 0.63282,0.81446 0.69531,0.7539 0.73828,0.73047 0.79688,0.64648 0.84179,0.61329 0.875,0.54882 0.91602,0.47852 0.92969,0.41602 0.97265,0.35351 0.98828,0.28906 1.00977,0.22852 1.02148,0.14062 1.0293,0.084 1.0293,0.0117 1.02734,-0.0605 1.18359,-0.125 29.3125,-1.03125 z m 1084.36332,78.84179 -101.127,4.35352 -6.5488,-0.35938 -83.4512,4.80079 191.4356,-5.22266 c 0,-0.32125 0.014,-0.42319 0,-1.29883 -0.01,-0.37139 -0.028,-0.74226 -0.043,-1.11328 -0.056,-0.23456 -0.1182,-0.46733 -0.1699,-0.70313 -0.033,-0.15169 -0.06,-0.30501 -0.092,-0.45703 z m -191.127,8.79493 -73.5234,2.00586 50.4531,-0.67774 z m -75.2285,103.03125 -69.9395,2.79296 z m 3.2773,138.18945 -101.5175,2.95117 40.8086,-0.64062 z m -101.5175,2.95117 -128.87309,-0.25195 -49.13476,0.65429 -20.16602,3.82032 -8.01367,7.13867 -3.2168,10.6914 -0.81054,30.44532 0.57031,34.34765 7.39453,11.23438 7.91211,2.83789 14.68555,-0.17774 51.25195,0.11133 97.08983,-1.60547 5.6817,-0.26171 14.2343,-0.35938 z m -11.3946,98.625 27.7598,0.38477 86.3242,-1.07813 z m -659.00388,219.7168 -5.97656,5.01367 -3.8125,6.50195 -8.89453,28.10549 -12.51758,45.5058 -2.75586,14.3067 -2.69922,25.7695 3.06641,12.4238 38.29101,-136.78316 z m 887.05468,311.97661 -7.8066,0.2402 18.8906,-0.1621 z m -7.8066,0.2402 -227.1504,1.9394 41.2246,1.2286 44.2773,-1.1211 44.875,0.7832 61.7891,-1.7579 z m -227.1504,1.9394 -3.1914,-0.096 -8.3477,0.1934 z m -11.5391,0.098 -238.52147,2.0371 11.18945,-0.123 -287.6914,2.2656 342.68945,-2.2969 42.21289,-0.3867 45.88086,-0.5 46.70702,-0.125 z" />
       <path
-         sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
-         style="fill:none;stroke:#ffffff;stroke-width:1.69333339;stroke-linecap:round;stroke-linejoin:round"
-         inkscape:connector-curvature="0"
          id="path412"
-         d="m 96.461806,99.675065 -1.125411,-10.283912 -0.22688,-8.189152 -0.34057,-2.355125 -0.009,-0.314221 -0.0282,-0.308176 -0.0426,-0.307044 -0.0654,-0.309587 -0.0786,-0.299222 -0.0991,-0.298485 -0.11555,-0.291711 -0.13197,-0.283815 -0.14587,-0.27221 -0.16273,-0.268883 -0.1815,-0.255802 -0.19202,-0.24315 -0.20598,-0.235991 -0.22061,-0.217213 -0.23649,-0.20621 -0.24136,-0.195161 -0.25522,-0.178733 -0.26508,-0.165845 -0.27536,-0.149118 -0.2825,-0.128091 -0.28592,-0.12067 -0.29832,-0.09439 -0.30259,-0.0842 -0.30052,-0.06315 -0.31059,-0.046 -0.31054,-0.02548 -0.31082,-0.01023 -0.31206,0.0072 -8.3239,0.411839 m 164.284385,142.280953 0.0285,2.32467 0.54014,45.68184 v 0 m -216.122483,4.04278 0.807205,0.1916 0.816414,0.17248 0.813942,0.15628 0.822503,0.13323 0.821129,0.11852 0.827784,0.0971 0.829794,0.0805 0.830201,0.061 0.826461,0.0392 0.833682,0.0225 0.832732,7.2e-4 0.829171,-0.0116 0.832756,-0.0379 0.830791,-0.0544 0.828813,-0.0709 0.82534,-0.0933 0.827914,-0.11138 0.800776,-0.12999 1.03135,-0.1819 1.036128,-0.16135 1.03928,-0.13785 1.045314,-0.11423 1.042144,-0.0905 1.005288,-0.0689 0.39765,-0.047 0.404095,-0.0308 0.40052,-0.0141 0.399999,0.007 0.403022,0.021 0.397236,0.0439 0.397821,0.0609 0.390831,0.0791 0.390545,0.0933 0.388512,0.11559 0.379154,0.13174 0.371756,0.1499 0.366404,0.16502 0.360627,0.17664 14.835273,2.97743 m 153.679426,-6.92569 v 0 l 0.007,-1.07736 -0.23992,-17.52551 -0.246,-25.42098 0.33288,-3.39836 2.64583,-1.5875 m 34.78677,107.8453 0.0141,2.93412 0.11435,23.34185 -0.26393,12.49611 m 22.19993,-146.70086 34.96465,0.16443 M 80.777865,73.893553 l -1.69897,-2.493401 0.0393,-4.568936 m 247.818365,-26.904204 0.10066,-0.116788 0.24318,-0.244008 -0.20474,-1.778306 v 0 l 1.00247,1.134629 0.28914,-0.186796 0.29518,-0.169088 0.30729,-0.156901 0.31418,-0.137094 0.31885,-0.118686 0.32727,-0.09915 0.33112,-0.08875 0.33286,-0.06681 0.3375,-0.04806 0.3429,-0.03203 0.34406,-0.01285 0.33848,0.0054 0.34504,0.0261 0.33773,-0.0019 28.23508,-0.249966 m -253.74614,226.529832 -0.71236,2.35413 -1.33001,4.1703 -0.21994,13.11639 1.35141,3.19577 3.42242,1.50891 5.84288,-0.071 7.84998,-0.096 7.73921,-0.0922 4.63793,-0.0547 4.62616,-0.0538 7.93436,-0.0994 7.53352,-0.0901 6.80057,-0.0807 1.65698,-0.97932 1.00511,-2.19567 0.36722,-9.85352 0.0964,-5.34972 -0.0574,-2.26411 m 160.20811,-178.447365 -0.29138,-48.068912 1.34672,-0.737761 -1.16267,0.07802 0.11742,-0.323051 0.13783,-0.313471 0.15351,-0.309053 0.16761,-0.294782 0.18448,-0.290733 0.20169,-0.278456 5.9033,-0.35956 -0.33773,0.0019" />
+         transform="matrix(0.26458333,0,0,0.26458333,-35.91689,-19.627318)"
+         style="fill:none;stroke:#ffffff;stroke-width:6.4000001;stroke-linecap:round;stroke-linejoin:round"
+         d="m 1462.4746,216.56836 -69.5039,0.61523 -1.2871,0.0781 0.01,-0.0703 -1.3047,-0.0996 -1.2793,-0.0195 -1.2989,0.0488 -1.2968,0.1211 -1.2754,0.18164 -1.2578,0.25195 -0.2676,0.0723 -10.5469,0.64257 -1.2265,-1.38867 0.1679,1.45313 -1.4492,0.0879 -0.7617,1.05273 -0.6973,1.09766 -0.6347,1.11523 -0.5801,1.16797 -0.5196,1.1836 -0.4453,1.22265 4.3946,-0.29492 -5.0899,2.78711 1.1016,181.67773 23.4414,-185.80664 72.0644,-4.97265 c -0.1466,-0.71146 -0.2816,-1.3663 -0.457,-2.20508 z m -1027.69726,110.20312 -0.14843,17.26954 6.42187,9.42382 z m 38.91602,25.10743 -1.17969,0.0273 -31.46094,1.55664 59.27539,97.44336 -4.25195,-38.86719 -0.85742,-30.95117 -1.28711,-8.90234 -0.0352,-1.1875 -0.10546,-1.16407 -0.16211,-1.16015 -0.2461,-1.16992 -0.29883,-1.13086 -0.37304,-1.12891 -0.4375,-1.10352 -0.49805,-1.07226 -0.55273,-1.0293 -0.61328,-1.01562 -0.6875,-0.9668 -0.72461,-0.91797 -0.7793,-0.89258 -0.83399,-0.82031 -0.89257,-0.7793 -0.91211,-0.73828 -0.96485,-0.67578 -1.00195,-0.62695 -1.04102,-0.5625 -1.06836,-0.48438 -1.08007,-0.45703 -1.12696,-0.35742 -1.14453,-0.31641 -1.13672,-0.24023 -1.17382,-0.17383 -1.17188,-0.0957 z m 734.91214,538.46484 132.1504,0.62305 z m -214.87112,0.31641 -10,6 -1.25782,12.84375 0.92969,96.08009 0.90625,66.2383 -0.0254,4.0722 z m 68.23632,0.55859 2.1504,181.44145 -2.043,-172.65629 z m -521.32617,181.19535 -2.69141,8.8984 -5.02734,15.7617 -0.83203,49.5742 5.10742,12.0782 12.93555,5.7031 22.08398,-0.2695 29.66797,-0.3614 29.25195,-0.3496 17.5293,-0.207 17.48438,-0.2031 29.98828,-0.375 28.47265,-0.3399 25.70313,-0.3066 6.26172,-3.7012 3.79883,-8.2988 1.38867,-37.2403 0.36523,-20.2207 -0.21875,-8.5566 z m -209.3125,14.455 -1.51367,0.055 -1.52734,0.1153 -1.50196,0.1777 -3.79883,0.2617 -3.93945,0.3418 -3.95117,0.4317 -3.92773,0.5214 -3.91602,0.6094 -3.89844,0.6875 -3.02539,0.4902 -3.13086,0.4219 -3.11914,0.3516 -3.13281,0.2695 -1.84375,0.1211 114.3457,10.3457 -56.07031,-11.2539 -1.36328,-0.668 -1.38477,-0.623 -1.40625,-0.5664 -1.43164,-0.4981 -1.46875,-0.4375 -1.47656,-0.3515 -1.47656,-0.3008 -1.50391,-0.2285 -1.50195,-0.166 -1.52344,-0.08 z m -42.22656,4.8555 -41.82617,-3.7851 3.05078,0.7246 3.08594,0.6523 3.07617,0.5898 3.10937,0.504 3.10352,0.4472 3.12695,0.3672 3.13672,0.3047 3.13867,0.2305 3.12305,0.1484 3.15039,0.084 h 3.14844 l 3.13281,-0.045 3.14844,-0.1426 z m 836.10743,206.5391 -0.4297,123.1328 c 0.1369,0.02 0.2734,0.042 0.4102,0.062 l 0.5039,-23.8828 -0.4317,-88.2227 z" />
       <path
-         sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccc"
-         style="fill:none;stroke:#ffffff;stroke-width:1.69333339;stroke-linecap:round;stroke-linejoin:round"
-         inkscape:connector-curvature="0"
          id="path414"
-         d="m 227.00866,216.02652 18.05427,0.14756 38.79695,-0.23104 m -45.56226,106.04014 -0.13385,26.79486 0.32349,12.69488 0.10272,2.57198 -0.17684,8.89318 -0.20767,12.29851 -0.26357,27.96852 0.0798,10.3391 0.21025,3.4076 0.15647,2.5047 m 27.00382,-311.45371 -7.71221,-1.55515 -10.47916,2.24886 -12.70349,0.8801 -0.92904,0.0646 -4.32871,2.60643 -2.16429,2.33709 -1.03397,1.87845 -0.26148,2.08001 -0.0862,1.68266 0.47567,1.27241 1.16433,1.2594 1.04035,0.96511 1.48639,0.27588 1.63252,-0.004 23.81242,-0.32979 1.95878,0.004 1.72298,-0.4604 1.12537,-1.06512 1.19049,-0.96185 1.93924,-1.40432 1.20344,-1.83807 0.0237,-1.98594 0.0476,-2.61372 0.49772,-3.02772 0.37747,-2.30861" />
+         transform="matrix(0.26458333,0,0,0.26458333,-35.91689,-19.627318)"
+         style="fill:none;stroke:#ffffff;stroke-width:6.4000001;stroke-linecap:round;stroke-linejoin:round"
+         d="m 1109.6582,514.29883 -39.6074,8.5 -48.0117,3.32617 -3.5118,0.24414 -16.3613,9.85156 -8.17967,8.83203 -3.90821,7.09961 -0.98828,7.86133 -0.32617,6.36133 1.79883,4.80859 4.40039,4.75977 3.93164,3.64844 5.61917,1.04101 6.1699,-0.0137 89.998,-1.24805 7.4043,0.0156 6.5118,-1.74024 4.2539,-4.02539 4.5,-3.63476 7.3281,-5.3086 4.5488,-6.94726 0.09,-7.50586 0.1796,-9.87695 1.8809,-11.44336 1.4277,-8.72657 z m 98.9473,376.04492 -214.87112,0.31641 68.23632,0.55859 z m -172.2051,400.78325 -0.5059,101.2714 0.6114,24.0118 z m 0.1055,125.2832 0.01,5.5878 c 0.019,-0.019 0.1021,-0.098 0.1367,-0.1328 z" />
       <path
          style="fill:none;stroke:#ffffff;stroke-width:0.81138885;stroke-linecap:round;stroke-linejoin:round"
          inkscape:connector-curvature="0"
@@ -1874,24 +1887,238 @@
   </g>
 </svg>
 
+
+
         </div>
         <div class="list map-list">
           <ul class="mdl-list mdl-shadow--2dp">
             <li class="mdl-list__item" onclick="lightup('vari-hall')">
               <span class="mdl-list__item-primary-content vari-hall">
+                Accolade East
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Accolade West
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Atkinson
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Behavioural Science
+              </span>
+            </li>
+              <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Bennet Centre
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Bergeron Centre
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                York Lanes, Bookstore
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Calumet College
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Central Square
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Centre for Film & Theatre
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Chemistry Building
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Curtis Lecture Halls
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Executive Learning Centre
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Farquharson Life Sciences
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Founders College
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Health, Nursing & Environmental Studies
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Ignat Kaneff Building, Osgoode Hall Law School
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Joan & Martin Goldfarb Centre for Fine Arts
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Kaneff Tower
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+               Kinsmen
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Lassonde Building
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Life Sciences Building
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Lorna R. Marsden Honour Court & Welcome Centre
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Lumbers
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Mclaughlin College
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Norman Bethune College
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Executive Learning Centre
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Observatory, Petrie
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Petrie Sience Building
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Ross Building
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Scott Library
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Scott Religious Centre
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Seymour Schulich Building
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Sherman Health Science Research Centre
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Steacie Science & Engineering Library
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Stedman Lecture Halls
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Stong College
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Student Centre
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Tait Mckenzie Centre
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Vanier College
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
                 Vari Hall
               </span>
             </li>
             <li class="mdl-list__item">
               <span class="mdl-list__item-primary-content">
-                Aaron Paul
+                Victor Phillip Dahdaleh Building
               </span>
             </li>
             <li class="mdl-list__item">
               <span class="mdl-list__item-primary-content">
-                Bob Odenkirk
+                West Office Building
               </span>
             </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                William Small Centre
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Winters College
+              </span>
+            </li>
+
+
           </ul>
         </div>
       </div>
