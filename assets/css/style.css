@@ -21,6 +21,7 @@
   }
   .container-map-list{
     /*display:inline;*/
+    height:90%;
   }
   .map-list{
     /*display:inline;*/
@@ -39,8 +40,8 @@
   .list ul{
     background-color: white;
     margin-top: 0;
-    /*margin-left: 20px;*/
-
+    height: 97%;
+    overflow: auto;
   }
   .list ul li:hover{
     box-shadow:0 2px 2px 0 rgba(0,0,0,.14),
@@ -62,8 +63,8 @@
     transition: fill 1s;
   }
   .mdl-layout__content{
-   /* margin:10px;
-    height:100%;*/
+   /* margin:10px;*/
+    height:100%;
   }
 
   /*Use a media query to add a breakpoint at 800px:*/
@@ -76,6 +77,7 @@
   .demo-layout-transparent .mdl-layout__header{
     /*keep header and transition opacity to solid*/
     display: block;
+    
     opacity: 1.0;
     transition: opacity 2s;
   }
@@ -87,6 +89,6 @@
     text-align: center;
   }
   .mdl-navigation{
-    display: block;
+    display:none;
   }
 }
