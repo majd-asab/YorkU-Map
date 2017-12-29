@@ -8,11 +8,11 @@
   <!-- Material Design icon font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="assets/css/style.css">
-
+ 
   <script type="text/javascript">
     function lightup(svgId){
       let structure  = document.getElementById(svgId);
-      let oldStyle   = structure.style.cssText;
+      let oldStyle   = "fill:#d9d0c9;fill-rule:evenodd;stroke:#b9a99c;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round";
       let flashStyle = "fill:#cc0000;";
       structure.setAttribute("style",flashStyle);
       setTimeout(function(){structure.setAttribute("style",oldStyle)},2000);
