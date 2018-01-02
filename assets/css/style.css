@@ -91,4 +91,8 @@
   .mdl-navigation{
     display:none;
   }
+
+  .demo-layout-transparent {
+  background: #ffffff;
+  }
 }
