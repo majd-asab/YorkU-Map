@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+	body{
+		margin: 0;
+		padding:0;
+		height:100vh;
+		width:100vw;
+	}
+	ul{
+		list-style: none;
+		border-color:black;
+		border-style: solid;
+/*		margin:5px;
+		padding:5px;*/
+		height:100%;
+		top:0;
+	}
+	li{
+		padding: 5px;
+		text-align: center;
+	}
+
+	.map img{
+		/*height:100%;
+		width:100%;*/
+	}
+	#map{
+		position:absolute;
+		top:0;
+		width:100%;
+		height:100%;
+	}
+
+	.list-container{
+		position:absolute;
+		top:0;
+		width: 100%;
+		height:100%;
+	}
+
+	.list-ul{
+		margin:0;
+	}
+</style>
+<script type="text/javascript">
+	
+</script>
+</head>
+<body>
+<div class="fullscreen">
+	<div id="map">
+		<!-- <img src="map-restructure.svg" alt="Kiwi standing on oval"> -->
+		</div>
+	<div class="list-container">
+		<ul class="list-ul">
+			<li>Building 1</li>
+			<li>Building 2</li>
+			<li>Building 3</li>
+			<li>Building 4</li>
+			<li>Building 5</li>
+			<li>Building 6</li>
+		</ul>
+	</div>
+</div>
+<script>
+ function initMap() {
+  var yorkU = {lat: 43.7735, lng: -79.5019};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: yorkU
+  });
+  var marker = new google.maps.Marker({
+     position: yorkU,
+     map: map
+  });
+ }
+ </script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+ </script>
+</body>
+</html>
