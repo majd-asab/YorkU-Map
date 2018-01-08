@@ -81,7 +81,7 @@ body{
 	height:100%;
 	width:100%;
 	color:#ffffff;
-	font-size:25px;
+	font-size:40px;
 	font-family: 'Pacifico', cursive;
 }
 
@@ -89,15 +89,15 @@ body{
 	text-align:center;
 }
 
-.welcome-instructions{
-	font-size: 20px;
-	margin:10px;
+.instructions-container{
 	text-align: center;
+	font-size: 25px;
+	margin:5px;
 }
 
-.arrows img {
-	
-	filter: brightness(0) invert(1);
+.instructions-content{
+	display: inline-block;
+	text-align: left;
 }
 
 .arrows img{
