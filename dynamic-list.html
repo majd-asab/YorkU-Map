@@ -3,13 +3,25 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
 <body>
 <div class="map_and_list">
-	<div id="map">
-		<!-- <img src="map-restructure.svg" alt="Kiwi standing on oval"> -->
-		</div>
+	<div id="map"></div>
 	<div class="list-container" >
+	<div class="layover" id="layover">
+		<p class="welcome-msg">Welcome to York University's interactive map!
+		</p>
+		<p class="welcome-instructions">
+			1. Click on the red button to select a building.
+			<br>
+			2. Done!
+		</p>
+		<div class="arrows">
+			<img class="left-arrow" src="assets/images/grey-arrows-down.png">
+			<img class="right-arrow" src="assets/images/grey-arrows-down.png">
+		</div>
+	</div>
 		<ul class="list-ul" id="list-ul">
 			<li onclick="selectObject(buildings.accolade_east,'Accolade East')">Accolade East</li>
 			<li onclick="selectObject(buildings.accolade_west,'Accolade West')">Accolade West</li>
@@ -61,8 +73,8 @@
 
 
 <script src="assets/js/library.js"></script>
- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ34xDkaaTu8buH5O9zlRpeEII96yYzoA&callback=initMap">
- </script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ34xDkaaTu8buH5O9zlRpeEII96yYzoA&callback=initMap">
+</script>
  
  </script>
 </body>

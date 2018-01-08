@@ -35,9 +35,11 @@
  	document.getElementById("list-ul").style.height ="0";
  }
 
- //cell press
+ //cell press, show list and remove layover
  function cellClicked(){
- 	document.getElementById("list-ul").style.height ="";
+  let layoverMessage = document.getElementById("layover");
+  if(layoverMessage){ layoverMessage.outerHTML="";}
+ 	document.getElementById("list-ul").style.height ="100%";
  }
 
  // buildings coordinates
