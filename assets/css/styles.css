@@ -5,13 +5,23 @@ body{
 		width:100vw;
 		font-family: "Montserrat",sans-serif;
 	}
+
+	.list-container{
+		position:absolute;
+		top:0;
+		width: 100%;
+		height:95%;
+	}
 	.list-container ul{
 		list-style: none;
-		height:100%;
+		height:0; /* starts at 0 to show map, then set to 100% */
 		top:0;
 		overflow:scroll; /* li disappears as ul collapses*/
 		padding:0;
 		overflow-x:hidden;
+		margin:0;
+		background-color: white;
+		transition: height 1s;
 	}
 	.list-container li{
 		padding: 5px;
@@ -30,18 +40,11 @@ body{
 		height:95%;
 	}
 
-	.list-container{
-		position:absolute;
-		top:0;
-		width: 100%;
-		height:95%;
-	}
-
-	.list-ul{
+/*	.list-ul{
 		margin:0;
 		background-color: white;
 		transition: height 1s;
-	}
+	}*/
 
 
 	/*additional*/
@@ -70,4 +73,64 @@ body{
 	background-color: #8e0000;
 }
 
+.layover{
+	position:absolute;
+	top:0;
+	background-color: #000000;
+	opacity:0.6;
+	height:100%;
+	width:100%;
+	color:#ffffff;
+	font-size:25px;
+	font-family: 'Pacifico', cursive;
+}
 
+.welcome-msg{
+	text-align:center;
+}
+
+.welcome-instructions{
+	font-size: 20px;
+	margin:10px;
+	text-align: center;
+}
+
+.arrows img {
+	
+	filter: brightness(0) invert(1);
+}
+
+.arrows img{
+	position: absolute;
+	bottom: 0;
+	height:60px;
+	width: 60px;
+}
+
+.left-arrow{
+	float: left;
+	margin-left: 15px;
+	-webkit-animation: arrows 1s infinite; /* Safari 4.0 - 8.0 */
+ animation: arrows 1s infinite;
+}
+
+.right-arrow{
+	right: 0; /* float doesnt work with absolute*/
+	margin-right: 15px;
+	-webkit-animation: arrows 1s infinite; /* Safari 4.0 - 8.0 */
+ animation: arrows 1s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes arrows {
+ 0%{bottom: 0px;}
+ 50%{bottom: 10px;}
+ 100%{bottom:0px;}
+}
+
+/* Standard syntax */
+@keyframes arrows {
+ 0%{bottom: 0px;}
+ 50%{bottom: 10px;}
+ 100%{bottom:0px;}
+}
