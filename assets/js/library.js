@@ -13,13 +13,19 @@
  
 	// google map initialization function
  function initMap() {
-  var yorkU = {lat: 43.7735, lng: -79.5019} ;
-   map = new google.maps.Map(document.getElementById('map'), {
+  var directionsService = new google.maps.DirectionsService; // required for paths
+  var directionsDisplay = new google.maps.DirectionsRenderer; // required for paths
+  var yorkU = {lat: 43.7735, lng: -79.5019};
+  map = new google.maps.Map(document.getElementById('map'), {
     zoom: 16,
     center: yorkU,
     disableDefaultUI: true,
   });
-  }
+  directionDisplay.setMap(map);
+
+  // on button click, calculate and display path
+  
+}
 
  // select object to highlight function
  function selectObject(obj,name){
