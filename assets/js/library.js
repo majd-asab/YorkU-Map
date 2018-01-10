@@ -45,7 +45,7 @@ function initMap() {
 function calculateAndDisplayRoute(directionsService,directionsDisplay,deviceLocation){
   obtainGeoLocation(function(result){
     directionsService.route({
-        origin: {lat: 43.7735, lng: -79.5019},//result,
+        origin: result,
         destination:{lat:oldMarker.getPosition().lat(),lng:oldMarker.getPosition().lng()},
         travelMode: "WALKING",
       }, function(response,status){
