@@ -8,68 +8,71 @@
 <body>
 <div class="map_and_list">
 	<div id="map"></div>
-	<div class="list-container" >
-	<div class="layover" id="layover">
-		<p class="welcome-msg">Welcome to York University's interactive map!
-		</p>
-		<div class="instructions-container">
-				<div class="instructions-content">
-					1. Click on the red button to select a building.<br />
-					2. Done!
-				</div>
-		</div>
-		<div class="arrows">
-			<img class="left-arrow" src="assets/images/grey-arrows-down.png">
-			<img class="right-arrow" src="assets/images/grey-arrows-down.png">
-		</div>
+	<div id="directions-button-container">
+		<span id="directions-button">Directions</span>
 	</div>
-		<ul class="list-ul" id="list-ul">
-			<li onclick="selectObject(buildings.accolade_east,'Accolade East')">Accolade East</li>
-			<li onclick="selectObject(buildings.accolade_west,'Accolade West')">Accolade West</li>
-			<li onclick="selectObject(buildings.atkinson,'Atkinson')">Atkinson</li>
-			<li onclick="selectObject(buildings.behavioral_science_building,'Behavioral Science Building')">Behavioral Science Building</li>
-			<li onclick="selectObject(buildings.bennette_center,'Bennette Centre')">Bennette Centre</li>
-			<li onclick="selectObject(buildings.bergeron_center,'Bergeron Centre')">Bergeron Centre</li>
-			<li onclick="selectObject(buildings.yorklanes,'York Lanes & Bookstore')">York Lanes & Bookstore</li>
-			<li onclick="selectObject(buildings.calumet_college,'Calumet College')">Calumet College</li>
-			<li onclick="selectObject(buildings.central_square,'Central Square')">Central Square</li>
-			<li onclick="selectObject(buildings.centre_film_media,'Centre For Film and Media')">Centre For Film and Media</li>
-			<li onclick="selectObject(buildings.chemistry_building,'Chemistry Building')">Chemistry Building</li>
-			<li onclick="selectObject(buildings.curtis_lecture_hall,'Curtis Lecture Halls')">Curtis Lecture Halls</li>
-			<li onclick="selectObject(buildings.executive_learning_centre,'Executive Learning Centre')">Executive Learning Centre</li>
-			<li onclick="selectObject(buildings.farquharson_life_science,'Farquharson Life Science')">Farquharson Life Science</li>
-			<li onclick="selectObject(buildings.founders_college,'Founders College')">Founders College</li>
-			<li onclick="selectObject(buildings.health_nursing,'Health, Nursing & Environmental Studies')">Health, Nursing & Environmental Studies</li>
-			<li onclick="selectObject(buildings.osgoode,'Osgoode Hall Law School')">Osgoode Hall Law School</li>
-			<li onclick="selectObject(buildings.fine_arts,'Fine Arts')">Fine Arts</li>
-			<li onclick="selectObject(buildings.kaneff_tower,'Kaneff Tower')">Kaneff Tower</li>
-			<li onclick="selectObject(buildings.lassonde_building,'Lassonde Building')">Lassonde Building</li>
-			<li onclick="selectObject(buildings.lumbers,'Lumbers')">Lumbers</li>
-			<li onclick="selectObject(buildings.Mclaughlin_college,'Mclaughlin College')">Mclaughlin College</li>
-			<li onclick="selectObject(buildings.bethune_college,'Bethune College')">Bethune College</li>
-			<li onclick="selectObject(buildings.observatory,'Observatory')">Observatory</li>
-			<li onclick="selectObject(buildings.petrie_science_building,'Petrie Science Building')">Petrie Science Building</li>
-			<li onclick="selectObject(buildings.ross,'Ross')">Ross</li>
-			<li onclick="selectObject(buildings.scott_library,'Scott Library')">Scott Library</li>
-			<li onclick="selectObject(buildings.scott_religious_centre,'Scott Religious Centre')">Scott Religious Centre</li>
-			<li onclick="selectObject(buildings.schulich,'Schulich')">Schulich</li>
-			<li onclick="selectObject(buildings.sherman_health_centre,'Sherman Health Centre')">Sherman Health Centre</li>
-			<li onclick="selectObject(buildings.steacie,'Steacie Library')">Steacie Library</li>
-			<li onclick="selectObject(buildings.stedman,'Stedman Lecture Halls')">Stedman Lecture Halls</li>
-			<li onclick="selectObject(buildings.stong_college,'Stong College')">Stong College</li>
-			<li onclick="selectObject(buildings.student_center_old,'Old Student Centre')">Old Student Centre</li>
-			<li onclick="selectObject(buildings.tait,'Tait Mckenzie')">Tait Mckenzie</li>
-			<li onclick="selectObject(buildings.vanier_college,'Vanier College')">Vanier College</li>
-			<li onclick="selectObject(buildings.vari_hall,'Vari Hall')">Vari Hall</li>
-			<li onclick="selectObject(buildings.db_building,'Victor Dahdaleh Building')">Victor Dahdaleh Building</li>
-			<li onclick="selectObject(buildings.west_office_building,'West Office Building')">West Office Building</li>
-			<li onclick="selectObject(buildings.william_small_centre,'William Small Centre')">William Small Centre</li>
-			<li onclick="selectObject(buildings.winters_college,'Winters College')">Winters College</li>
-		</ul>
-	</div> 
+	<div class="list-container" >
+		<div class="layover" id="layover">
+			<p class="welcome-msg">Welcome to York University's interactive map!
+			</p>
+			<div class="instructions-container">
+					<div class="instructions-content">
+						1. Click on the red button to select a building.<br />
+						2. Done!
+					</div>
+			</div>
+			<div class="arrows">
+				<img class="left-arrow" src="assets/images/grey-arrows-down.png">
+				<img class="right-arrow" src="assets/images/grey-arrows-down.png">
+			</div>
+		</div>
+			<ul class="list-ul" id="list-ul">
+				<li onclick="selectObject(buildings.accolade_east,'Accolade East')">Accolade East</li>
+				<li onclick="selectObject(buildings.accolade_west,'Accolade West')">Accolade West</li>
+				<li onclick="selectObject(buildings.atkinson,'Atkinson')">Atkinson</li>
+				<li onclick="selectObject(buildings.behavioral_science_building,'Behavioral Science Building')">Behavioral Science Building</li>
+				<li onclick="selectObject(buildings.bennette_center,'Bennette Centre')">Bennette Centre</li>
+				<li onclick="selectObject(buildings.bergeron_center,'Bergeron Centre')">Bergeron Centre</li>
+				<li onclick="selectObject(buildings.yorklanes,'York Lanes & Bookstore')">York Lanes & Bookstore</li>
+				<li onclick="selectObject(buildings.calumet_college,'Calumet College')">Calumet College</li>
+				<li onclick="selectObject(buildings.central_square,'Central Square')">Central Square</li>
+				<li onclick="selectObject(buildings.centre_film_media,'Centre For Film and Media')">Centre For Film and Media</li>
+				<li onclick="selectObject(buildings.chemistry_building,'Chemistry Building')">Chemistry Building</li>
+				<li onclick="selectObject(buildings.curtis_lecture_hall,'Curtis Lecture Halls')">Curtis Lecture Halls</li>
+				<li onclick="selectObject(buildings.executive_learning_centre,'Executive Learning Centre')">Executive Learning Centre</li>
+				<li onclick="selectObject(buildings.farquharson_life_science,'Farquharson Life Science')">Farquharson Life Science</li>
+				<li onclick="selectObject(buildings.founders_college,'Founders College')">Founders College</li>
+				<li onclick="selectObject(buildings.health_nursing,'Health, Nursing & Environmental Studies')">Health, Nursing & Environmental Studies</li>
+				<li onclick="selectObject(buildings.osgoode,'Osgoode Hall Law School')">Osgoode Hall Law School</li>
+				<li onclick="selectObject(buildings.fine_arts,'Fine Arts')">Fine Arts</li>
+				<li onclick="selectObject(buildings.kaneff_tower,'Kaneff Tower')">Kaneff Tower</li>
+				<li onclick="selectObject(buildings.lassonde_building,'Lassonde Building')">Lassonde Building</li>
+				<li onclick="selectObject(buildings.lumbers,'Lumbers')">Lumbers</li>
+				<li onclick="selectObject(buildings.Mclaughlin_college,'Mclaughlin College')">Mclaughlin College</li>
+				<li onclick="selectObject(buildings.bethune_college,'Bethune College')">Bethune College</li>
+				<li onclick="selectObject(buildings.observatory,'Observatory')">Observatory</li>
+				<li onclick="selectObject(buildings.petrie_science_building,'Petrie Science Building')">Petrie Science Building</li>
+				<li onclick="selectObject(buildings.ross,'Ross')">Ross</li>
+				<li onclick="selectObject(buildings.scott_library,'Scott Library')">Scott Library</li>
+				<li onclick="selectObject(buildings.scott_religious_centre,'Scott Religious Centre')">Scott Religious Centre</li>
+				<li onclick="selectObject(buildings.schulich,'Schulich')">Schulich</li>
+				<li onclick="selectObject(buildings.sherman_health_centre,'Sherman Health Centre')">Sherman Health Centre</li>
+				<li onclick="selectObject(buildings.steacie,'Steacie Library')">Steacie Library</li>
+				<li onclick="selectObject(buildings.stedman,'Stedman Lecture Halls')">Stedman Lecture Halls</li>
+				<li onclick="selectObject(buildings.stong_college,'Stong College')">Stong College</li>
+				<li onclick="selectObject(buildings.student_center_old,'Old Student Centre')">Old Student Centre</li>
+				<li onclick="selectObject(buildings.tait,'Tait Mckenzie')">Tait Mckenzie</li>
+				<li onclick="selectObject(buildings.vanier_college,'Vanier College')">Vanier College</li>
+				<li onclick="selectObject(buildings.vari_hall,'Vari Hall')">Vari Hall</li>
+				<li onclick="selectObject(buildings.db_building,'Victor Dahdaleh Building')">Victor Dahdaleh Building</li>
+				<li onclick="selectObject(buildings.west_office_building,'West Office Building')">West Office Building</li>
+				<li onclick="selectObject(buildings.william_small_centre,'William Small Centre')">William Small Centre</li>
+				<li onclick="selectObject(buildings.winters_college,'Winters College')">Winters College</li>
+			</ul>
+		</div> 
 	</div>
 	<div class="cell" id="cell" onclick="cellClicked()">
-		<p id="cell-li" >Building Name</p>
+		<p id="cell-li">Building Name</p>
 	</div>
 
 
