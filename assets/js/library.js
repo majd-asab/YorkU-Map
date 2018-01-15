@@ -54,7 +54,7 @@ function calculateAndDisplayRoute(directionsService,directionsDisplay,deviceLoca
             directionsDisplay.setDirections(response);
             clearOverlays();
           }else{
-            window.alert("Direction request failed due to " + status);
+            swal("Direction request failed due to " + status);
           }
       }
     );
@@ -71,10 +71,10 @@ function obtainGeoLocation(cb){
         return cb(loc);
       },
       function(error){
-        window.alert("Failed to obtain geolocation");
+        swal("Failed to obtain geolocation");
       });
   }else{
-    window.alert("Browser does not support geolocation detection, or not enabled.")
+    swal("Browser does not support geolocation detection, or not enabled.")
   }
 }
 
