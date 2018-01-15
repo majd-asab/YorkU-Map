@@ -1,6 +1,6 @@
 // global objects to control
 	var map;
-	// var markersArray = [];
+	var yorkUCoords = {lat: 43.7735, lng: -79.5019};
 	var oldMarker,
 		markerCount=0;
 
@@ -25,10 +25,9 @@
 function initMap() {
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer;
-  var yorkU = {lat: 43.7735, lng: -79.5019};
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 16,
-    center: yorkU,
+    center: yorkUCoords,
     disableDefaultUI: true,
   });
 
@@ -40,10 +39,14 @@ function initMap() {
   });
 }
 // Function to calculate and display the route
+// if user is not within reasonable campus walking distance
+// user will be prompted to relocate logically to the center of the campus.
 // @param directionsService: DirectionsService
 // @param directionsDisplay:  directionsRenderer
 function calculateAndDisplayRoute(directionsService,directionsDisplay,deviceLocation){
   obtainGeoLocation(function(result){
+    let notOnCampus = document.getElementById("not-on-campus-box").checked;
+    if(notOnCampus) result = yorkUCoords;
     directionsService.route({
         origin: result,
         destination:{lat:oldMarker.getPosition().lat(),lng:oldMarker.getPosition().lng()},

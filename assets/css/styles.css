@@ -151,7 +151,7 @@ body{
  border-bottom-style: solid;
  border-bottom-left-radius:16px; 
  border-top-left-radius:16px;
- transition: width 3s;
+ transition: width 1s;
 }
 
 #directions-button{
