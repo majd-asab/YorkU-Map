@@ -142,19 +142,12 @@ body{
  z-index: 9999;
 	position: fixed;
  margin-top: 5%;
- display:inline-block;
- background-color:black;
- border-width: 0px;
- border-color: #BDBDBD;
- border-top-style: solid;
- border-left-style: solid;
- border-bottom-style: solid;
- border-bottom-left-radius:16px; 
- border-top-left-radius:16px;
- transition: width 1s;
+ background-color: #FFF;
+ box-shadow:1px 1px 5px #000, -1px -1px  5px #000;
+ transition: all 0.5s;
 }
 
-#directions-button{
-	color:white;
-	padding:5px;
+
+#directions-button-container span{
+	margin: 5px;
 }
